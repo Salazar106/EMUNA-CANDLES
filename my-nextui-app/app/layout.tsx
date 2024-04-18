@@ -7,6 +7,11 @@ import { Navbar } from "@/components/navbar";
 import { Link } from "@nextui-org/link";
 import clsx from "clsx";
 
+import type { Viewport } from 'next'
+ 
+export const viewport: Viewport = {
+  themeColor: 'black',
+}
 export const metadata: Metadata = {
 	title: {
 		default: siteConfig.name,

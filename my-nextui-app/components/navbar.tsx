@@ -11,7 +11,7 @@ import { Button } from "@nextui-org/button";
 import { Kbd } from "@nextui-org/kbd";
 import { Link } from "@nextui-org/link";
 import { Input } from "@nextui-org/input";
-
+import { FaFacebook, FaInstagram ,FaXTwitter  } from "react-icons/fa6";
 import { link as linkStyles } from "@nextui-org/theme";
 
 import { siteConfig } from "@/config/site";
@@ -84,13 +84,13 @@ export const Navbar = () => {
 			>
 				<NavbarItem className="hidden sm:flex gap-2">
 					<Link isExternal href={siteConfig.links.twitter} aria-label="Twitter">
-						<TwitterIcon className="text-white" />
+						<FaXTwitter  className="text-white" />
 					</Link>
 					<Link isExternal href={siteConfig.links.discord} aria-label="Discord">
-						<DiscordIcon className="text-white" />
+						<FaInstagram  className="text-white" />
 					</Link>
 					<Link isExternal href={siteConfig.links.github} aria-label="Github">
-						<GithubIcon className="text-white" />
+						<FaFacebook className="text-white" />
 					</Link>
 					<ThemeSwitch />
 				</NavbarItem>
@@ -111,7 +111,7 @@ export const Navbar = () => {
 
 			<NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
 				<Link isExternal href={siteConfig.links.github} aria-label="Github">
-					<GithubIcon className="text-default-500" />
+					<FaFacebook />
 				</Link>
 				<ThemeSwitch />
 				<NavbarMenuToggle />
