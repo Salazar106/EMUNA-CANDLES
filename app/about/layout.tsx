@@ -5,7 +5,7 @@ export default function AboutLayout({
 }) {
 	return (
 		<section className="flex flex-col items-center justify-center gap-4 py-2 md:py-10">
-			<div className="inline-block text-center justify-center">
+			<div className="inline-block text-center  sm:px-0  justify-center">
 				{children}
 			</div>
 		</section>

@@ -14,7 +14,7 @@
 
 /* Personaliza el scrollbar thumb (parte desplazable) */
 ::-webkit-scrollbar-thumb {
-  background-color: #6f4e37; /* Color café */
+  background-color: #b38d6d; /* Color café */
   border-radius: 10px; /* Redondea las esquinas */
 }
 

@@ -18,7 +18,7 @@ export default function AboutPage() {
 
 	return (
 		<div>
-			<h1 className="text-3xl text-gray-600 mb-5 font-bold">Welcome to Emuna Candles, where tradition meets innovation, and light blends with energy to create moments of warmth and harmony in your life.</h1>
+			<h1 className="text-2xl md:text-3xl lg:text-4xl text-gray-600 mb-5 font-bold">Welcome to Emuna Candles, where tradition meets innovation, and light blends with energy to create moments of warmth and harmony in your life.</h1>
 
 			<div className="flex flex-wrap justify-center gap-20">
 				<div className="flex items-center justify-center gap-20 ">
@@ -26,13 +26,13 @@ export default function AboutPage() {
 						<h1 className="text-3xl mb-4 font-bold">OUR STORY</h1>
 						<p className=""> {story} </p>
 					</div>
-					<div className="relative">
+					<div className="hidden md:block relative">
 						<Image isZoomed src="/imgs/Imagen1.png" alt="Ejemplo" width={900} height={400} />
 					</div>
 				</div>
 
 				<div className="flex items-center justify-center gap-20 ">
-					<div className="relative">
+					<div className=" hidden md:block relative">
 						<Image src="/imgs/Imagen2.png" alt="Ejemplo" width={900} height={400} />
 					</div>
 					<div>
@@ -56,7 +56,7 @@ export default function AboutPage() {
 						<h1 className="text-3xl mb-4 font-bold">VISION</h1>
 						<p className=""> {vision} </p>
 					</div>
-					<div className="relative">
+					<div className="hidden md:block relative">
 						<Image src="/imgs/Imagen3.png" alt="Ejemplo" width={900} height={400} />
 					</div>
 				</div>
