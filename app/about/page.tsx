@@ -3,6 +3,10 @@ import { Image } from "@nextui-org/react";
 
 export default function AboutPage() {
 
+	const title=`Welcome to Emuna Candles, where tradition meets
+	 innovation, and light blends with energy to create moments 
+	 of warmth and harmony in your life.`
+
 	const story = `Emuna Candles is more than just a brand;
 	 it's a story of courage, passion, and creativity that began 
 	 with the Martinez family's journey from the lush landscapes 
@@ -18,12 +22,12 @@ export default function AboutPage() {
 
 	return (
 		<div>
-			<h1 className="text-2xl md:text-3xl lg:text-4xl text-gray-600 mb-5 font-bold">Welcome to Emuna Candles, where tradition meets innovation, and light blends with energy to create moments of warmth and harmony in your life.</h1>
+			<h1 className="text-[18px] md:text-[25] text-primary mb-5 font-bold">{title}</h1>
 
 			<div className="flex flex-wrap justify-center gap-20">
 				<div className="flex items-center justify-center gap-20 ">
 					<div>
-						<h1 className="text-3xl mb-4 font-bold">OUR STORY</h1>
+						<h1 className="text-3xl mb-4 font-bold text-primary">OUR STORY</h1>
 						<p className=""> {story} </p>
 					</div>
 					<div className="hidden md:block relative">
@@ -36,15 +40,15 @@ export default function AboutPage() {
 						<Image src="/imgs/Imagen2.png" alt="Ejemplo" width={900} height={400} />
 					</div>
 					<div>
-						<h1 className="text-3xl mb-4 font-bold">Why Choose Emuna?</h1>
+						<h1 className="text-3xl mb-4 font-bold text-primary">Why Choose Emuna?</h1>
 						<p>
-							<strong>Authenticity:</strong> Our candles are handcrafted with love and expertise, reflecting the heritage and dedication of our Colombian roots.
+							<strong className="text-primary">Authenticity:</strong> Our candles are handcrafted with love and expertise, reflecting the heritage and dedication of our Colombian roots.
 						</p>
 						<p>
-							<strong>Quality:</strong> We use only the finest beeswax and natural ingredients, ensuring a clean and long-lasting burn for your enjoyment.
+							<strong className="text-primary">Quality:</strong> We use only the finest beeswax and natural ingredients, ensuring a clean and long-lasting burn for your enjoyment.
 						</p>
 						<p>
-							<strong>Energy Infusion:</strong> Each candle is designed to not only brighten your space but also to promote positivity and tranquility, creating a sanctuary wherever it is lit.
+							<strong className="text-primary">Energy Infusion:</strong> Each candle is designed to not only brighten your space but also to promote positivity and tranquility, creating a sanctuary wherever it is lit.
 							Join the Emuna Family by choosing Emuna Candles, you are not just purchasing a product; you are embracing a story of resilience and innovation. Let our candles be a beacon of light and energy in your life's journey.
 						</p>
 
@@ -53,7 +57,7 @@ export default function AboutPage() {
 
 				<div className="flex items-center justify-center gap-20 ">
 					<div>
-						<h1 className="text-3xl mb-4 font-bold">VISION</h1>
+						<h1 className="text-3xl mb-4 font-bold text-primary">VISION</h1>
 						<p className=""> {vision} </p>
 					</div>
 					<div className="hidden md:block relative">
