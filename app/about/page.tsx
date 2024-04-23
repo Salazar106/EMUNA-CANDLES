@@ -20,6 +20,18 @@ export default function AboutPage() {
 	beeswax and carefully selected essential oils to create a sensory 
 	experience that nurtures the soul.`
 
+	const Authenticity=`Our candles are handcrafted with love and expertise,
+	 reflecting the heritage and dedication of our Colombian roots.`
+
+	const Quality=`We use only the finest beeswax and natural ingredients, 
+	ensuring a clean and long-lasting burn for your enjoyment.`
+
+	const EnergyInfusion=`Each candle is designed to not only brighten your 
+	space but also to promote positivity and tranquility, creating a sanctuary
+	wherever it is lit.
+	Join the Emuna Family by choosing Emuna Candles, you are not just purchasing
+	 a product; you are embracing a story of resilience and innovation. Let our 
+	 candles be a beacon of light and energy in your life's journey.`
 	return (
 		<div>
 			<h1 className="text-[18px] md:text-[25] text-primary mb-5 font-bold">{title}</h1>
@@ -42,14 +54,13 @@ export default function AboutPage() {
 					<div>
 						<h1 className="text-3xl mb-4 font-bold text-primary">Why Choose Emuna?</h1>
 						<p>
-							<strong className="text-primary">Authenticity:</strong> Our candles are handcrafted with love and expertise, reflecting the heritage and dedication of our Colombian roots.
+							<strong className="text-primary">Authenticity:</strong> {Authenticity}
 						</p>
 						<p>
-							<strong className="text-primary">Quality:</strong> We use only the finest beeswax and natural ingredients, ensuring a clean and long-lasting burn for your enjoyment.
+							<strong className="text-primary">Quality:</strong> {Quality}
 						</p>
 						<p>
-							<strong className="text-primary">Energy Infusion:</strong> Each candle is designed to not only brighten your space but also to promote positivity and tranquility, creating a sanctuary wherever it is lit.
-							Join the Emuna Family by choosing Emuna Candles, you are not just purchasing a product; you are embracing a story of resilience and innovation. Let our candles be a beacon of light and energy in your life's journey.
+							<strong className="text-primary">Energy Infusion:</strong> {EnergyInfusion}
 						</p>
 
 					</div>
