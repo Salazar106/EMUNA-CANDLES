@@ -1,5 +1,6 @@
 import { CopyText } from "@/components/gerenal/copyText";
 import { Input, Textarea, Snippet } from "@nextui-org/react";
+import {Button} from "@nextui-org/react";
 
 
 
@@ -31,8 +32,12 @@ export default function ContactUsForm() {
           variant="underlined"
           labelPlacement="outside"
           placeholder="*Enter your comment"
-          className="col-span-12 md:col-span-6 mb-6 md:mb-0"
+          className="col-span-12 md:col-span-6 mb-6 md:mb-0 "
         />
+
+        <div className="flex w-full justify-end">
+          <Button className="bg-black text-white">Send Mesagge</Button>
+        </div>
       </div>
     </div>
   );

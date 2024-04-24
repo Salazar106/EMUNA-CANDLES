@@ -1,10 +1,17 @@
+'use client'
+
 import React from "react";
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button } from "@nextui-org/react";
 import { FaSquareFacebook, FaInstagram } from "react-icons/fa6";
 import { Image } from "@nextui-org/react";
 import "./navBar.css"
+import { usePathname } from 'next/navigation';
+import clsx from "clsx";
+import NavDropdown from "./navDropDown";
 
 export const NavBar = () => {
+
+    const pathname = usePathname();
 
     const links = [
         { name: 'Home', link: '/' },
@@ -21,16 +28,16 @@ export const NavBar = () => {
 
 
     return (
-        <div>
-            <div className=" hidden md:block h-36 bg-sky-200" id="imgNavBar">  
-            </div>            
+        <div className="">
+            {/* <div className=" hidden md:block h-36 bg-sky-200" id="imgNavBar">  
+            </div>             */}
 
-            <Navbar style={{ backgroundColor: "#b38c6d", color: "white" }}
+            <Navbar style={{ backgroundColor: "#ffffff", boxShadow: "1px 3px 10px gray" }}
                 classNames={{
                     item: [
                         "flex",
                         "relative",
-                        "h-full",
+                        "h-[50px]",
                         "items-center",
                         "data-[active=true]:after:content-['']",
                         "data-[active=true]:after:absolute",
@@ -52,7 +59,10 @@ export const NavBar = () => {
                 <NavbarContent className="hidden sm:flex gap-4" justify="center">
                     {links.map((link, index) => (
                         <NavbarItem key={index}>
-                            <Link style={{ color: "white" }} href={link.link}>
+                            <Link className={clsx(
+                                'text-black',
+                                { 'text-[20px] font-bold border-b border-black': pathname === link.link }
+                            )} style={{ color: "black" }} href={link.link}>
                                 {link.name}
                             </Link>
                         </NavbarItem>
@@ -62,7 +72,7 @@ export const NavBar = () => {
                 <NavbarContent justify="end">
                     {social.map((red, index) => (
                         <NavbarItem key={index}>
-                            <Link target="_blank" style={{ color: "white" }} href={red.link}>
+                            <Link className="font-bold text-back" target="_blank" href={red.link}>
                                 {red.icon}
                             </Link>
                         </NavbarItem>
@@ -75,6 +85,9 @@ export const NavBar = () => {
                         Sign Up
                     </Button>
                 </NavbarItem> */}
+                <div className="sm:hidden">
+                    <NavDropdown path={pathname} links={links}/>
+                </div>
                 </NavbarContent>
             </Navbar>
         </div>
