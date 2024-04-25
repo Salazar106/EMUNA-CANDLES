@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <NavBar/>
-        <div className="flex items-center justify-center px-20">
+        <div className="flex items-center justify-center ">
          {children}
         </div>
        <Footer/>
