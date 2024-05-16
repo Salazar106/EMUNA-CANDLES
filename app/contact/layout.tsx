@@ -1,4 +1,3 @@
-import "@/components/layout/contact/style.css"
 export default function AboutLayout({
 	children,
 }: {
