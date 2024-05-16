@@ -2,12 +2,13 @@ import { Image } from "@nextui-org/react";
 import "./navBar.css";
 import PolicyModal from "../gerenal/policyModal";
 export default function Footer() {
+  
   const policys = [
     {
       tittle: `Privacy Policy`,
       ddd:[
         {
-          subtitle:`SECTION 1 - HOW WE HANDLE YOUR INFORMATION`,
+          subtitle:`SECTION 1 - HOW WE HANDLE YOUR INFORMATION`, 
           description:`When you make a purchase from our store, as part of the transaction process, we collect the personal information you provide such as your name, address, and email address.
           Email Communication: With your consent, we may send you emails about our store, new products, and updates.`
         },
@@ -197,12 +198,11 @@ export default function Footer() {
           Extinguish all candles before retiring to bed.
           Educate children about the hazards of open flames. Teach them that candles are not toys and should not be handled or ingested.
           Reference: Health Canada - Candle Safety (https://www.canada.ca/en/health-canada/services/healthy-living/your-health/products/candle-safety.htm)`
-        }
-        
+        }  
       ]
-      
     },
   ];
+  
   return (
     <div className="w-full bg-gray-800 flex item-center justify-between px-5 sm:h-40 md:h-32 md:px-10 lg:px-16">
       <div className="flex h-full items-center ">

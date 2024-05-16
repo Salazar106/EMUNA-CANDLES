@@ -37,7 +37,6 @@ export const NavBar = () => {
                     item: [
                         "flex",
                         "relative",
-                        "h-[50px]",
                         "items-center",
                         "data-[active=true]:after:content-['']",
                         "data-[active=true]:after:absolute",
@@ -52,7 +51,7 @@ export const NavBar = () => {
                 }}
             >
                 <NavbarBrand>
-                    <Image src='/imgs/grayLogo.png' alt="Ejemplo" width={70} />
+                    <Image src='/imgs/emunaLogo.png' alt="Ejemplo" width={70} />
 
                     {/* <p className="font-bold text-inherit">EMUNA CANDLES</p> */}
                 </NavbarBrand>
@@ -61,7 +60,7 @@ export const NavBar = () => {
                         <NavbarItem key={index}>
                             <Link className={clsx(
                                 'text-black',
-                                { 'text-[20px] font-bold border-b border-black': pathname === link.link }
+                                { 'text-[20px] text-primary font-bold border-b-2 border-primary': pathname === link.link }
                             )} style={{ color: "black" }} href={link.link}>
                                 {link.name}
                             </Link>

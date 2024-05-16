@@ -22,7 +22,7 @@ export const CopyText = ({text}) => {
 
   return (
     <span
-        className="font-bold text-primary"
+        className="font-bold text-wite"
         style={{ cursor: 'pointer', textDecoration: copied ? 'underline' : 'none' }}
         onClick={copyToClipboard}
     >
