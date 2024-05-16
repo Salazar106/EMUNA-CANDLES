@@ -1,4 +1,4 @@
-import { CopyText } from "@/components/gerenal/copyText";
+import { CopyText } from "@/app/UI/gerenal/copyText";
 import { Input, Textarea, Snippet } from "@nextui-org/react";
 import {Button} from "@nextui-org/react";
 import './style.css'

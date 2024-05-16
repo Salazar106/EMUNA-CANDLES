@@ -1,5 +1,5 @@
-import { GoogleMapDirection } from "@/components/layout/contact/googleMaps"
-import ContactUsForm from "@/components/layout/contact/contactForm"
+import { GoogleMapDirection } from "@/app/UI/layout/contact/googleMaps"
+import ContactUsForm from "@/app/UI/layout/contact/contactForm"
 import Script from 'next/script';
 
 export default function ContactPage() {
