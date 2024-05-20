@@ -14,11 +14,12 @@
     "@react-aria/utils": "^3.23.2",
     "@types/google.maps": "^3.55.7",
     "clsx": "^2.1.1",
-    "framer-motion": "^11.1.7",
+    "framer-motion": "^11.1.9",
     "next": "14.2.2",
     "react": "^18",
     "react-dom": "^18",
-    "react-icons": "^5.1.0"
+    "react-icons": "^5.1.0",
+    "whatsapp-web.js": "^1.23.0"
   },
   "devDependencies": {
     "@types/node": "^20",
