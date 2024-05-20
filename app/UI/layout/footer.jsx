@@ -204,12 +204,12 @@ export default function Footer() {
   ];
   
   return (
-    <div className="w-full bg-gray-800 flex item-center justify-between px-5 sm:h-40 md:h-32 md:px-10 lg:px-16">
+    <div className="w-full bg-gray-400 flex item-center justify-between px-5 sm:h-40 md:h-32 md:px-10 lg:px-16">
       <div className="flex h-full items-center ">
         <Image isZoomed src="/imgs/innminds.jpeg" alt="innminds" width={100} />
       </div>
 
-      <div className="flex items-center flex-wrap flex-col text-gray-500 gap-2 mt-5">
+      <div className="flex items-center flex-wrap flex-col text-gray-700 gap-2 mt-5">
         {policys.map((item,index)=>(
           <PolicyModal key={index} title={item.tittle}>{item.ddd && item.ddd.map((subItem,subIndex)=>(
             <div key={subIndex}>
