@@ -1,8 +1,10 @@
+"use client"
 import { Image } from "@nextui-org/react";
+import { motion, useInView } from "framer-motion";
 
 
 export default function AboutPage() {
-
+	
 	const title=`Welcome to Emuna Candles, where tradition meets
 	 innovation, and light blends with energy to create moments 
 	 of warmth and harmony in your life.`
@@ -34,24 +36,49 @@ export default function AboutPage() {
 	 candles be a beacon of light and energy in your life's journey.`
 	return (
 		<div>
-			<h1 className="text-[18px] md:text-[25] text-primary mb-5 font-bold">{title}</h1>
+			<motion.h1
+				initial={{ opacity: 0, y: "-100%" }}
+				animate={{ opacity: 1, y: 0 }}
+				transition={{ duration: 1 }}
+				className="text-[18px] md:text-[25] text-primary mb-5 font-bold"
+			>
+				{title}
+			</motion.h1>
 
 			<div className="flex flex-wrap justify-center gap-20">
 				<div className="flex items-center justify-center gap-20 ">
-					<div>
+					<motion.div 
+						initial={{ opacity: 0, x: "-100%" }}
+						animate={{ opacity: 1, x: 0 }}
+						transition={{ duration: 1 }}
+					>
 						<h1 className="text-3xl mb-4 font-bold text-primary">OUR STORY</h1>
 						<p className=""> {story} </p>
-					</div>
-					<div className="hidden md:block relative">
+					</motion.div>
+					<motion.div
+						initial={{ opacity: 0, x: "100%" }}
+						animate={{ opacity: 1, x: 0 }}
+						transition={{ duration: 1 }}
+						className="hidden md:block relative"
+					 >
 						<Image isZoomed src="/imgs/Imagen1.png" alt="Ejemplo" width={900} height={400} />
-					</div>
+					</motion.div>
 				</div>
 
 				<div className="flex items-center justify-center gap-20 ">
-					<div className=" hidden md:block relative">
+					<motion.div 
+						initial={{ opacity: 0, x: "-100%" }}
+						animate={{ opacity: 1, x: 0 }}
+						transition={{ duration: 1 }}
+						className=" hidden md:block relative"
+					>
 						<Image src="/imgs/Imagen2.png" alt="Ejemplo" width={900} height={400} />
-					</div>
-					<div>
+					</motion.div>
+					<motion.div
+						initial={{ opacity: 0, x: "100%" }}
+						animate={{ opacity: 1, x: 0 }}
+						transition={{ duration: 1 }}
+					>
 						<h1 className="text-3xl mb-4 font-bold text-primary">Why Choose Emuna?</h1>
 						<p>
 							<strong className="text-primary">Authenticity:</strong> {Authenticity}
@@ -63,17 +90,26 @@ export default function AboutPage() {
 							<strong className="text-primary">Energy Infusion:</strong> {EnergyInfusion}
 						</p>
 
-					</div>
+					</motion.div>
 				</div>
 
 				<div className="flex items-center justify-center gap-20 ">
-					<div>
+					<motion.div
+						initial={{ opacity: 0, x: "-100%" }}
+						animate={{ opacity: 1, x: 0 }}
+						transition={{ duration: 1 }}
+					>
 						<h1 className="text-3xl mb-4 font-bold text-primary">VISION</h1>
 						<p className=""> {vision} </p>
-					</div>
-					<div className="hidden md:block relative">
+					</motion.div>
+					<motion.div
+						initial={{ opacity: 0, x: "100%" }}
+						animate={{ opacity: 1, x: 0 }}
+						transition={{ duration: 1 }}
+						className="hidden md:block relative"
+					>
 						<Image src="/imgs/Imagen3.png" alt="Ejemplo" width={900} height={400} />
-					</div>
+					</motion.div>
 				</div>
 			</div>
 		</div>
