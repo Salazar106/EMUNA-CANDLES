@@ -4,6 +4,7 @@ import { Input, Textarea, Snippet } from "@nextui-org/react";
 import {Button} from "@nextui-org/react";
 import './style.css'
 import { motion } from "framer-motion";
+import { FaPhone, FaEnvelope  } from "react-icons/fa6";
 
 export default function ContactUsForm() {
   const FormTitle = `If you're contacting us about a recent order, 
@@ -20,15 +21,19 @@ export default function ContactUsForm() {
           stiffness: 260,
           damping: 20
         }}
-        className="text-center text-white text-[20px] w-full md:w-2/4 mx-5">
-
-     
+        className="text-center text-white text-[20px] w-full md:w-2/4 mx-5"
+      >
         <p className=" ">
           If you have inquiries about fundraisers, donations, events, or
           collaborations, please reach out to us via email or contact:
-        </p><br />
-        <p><CopyText text="emuna@gmail.com"/></p>
-        <CopyText text="565465424"/>
+        </p>
+        
+          <div className="flex flex-col items-center justify-center gap-2">
+            <div className="flex gap-2 items-center"><FaPhone/><CopyText text="emuna@gmail.com"/></div>
+            <div className="flex gap-2 items-center"><FaEnvelope /><CopyText text="565465424"/></div>
+          </div>
+          
+        
         
         <h1 className="text-white text-lg font-bold mt-5">{FormTitle}</h1>
       </motion.div>
