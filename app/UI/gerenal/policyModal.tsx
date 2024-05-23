@@ -7,7 +7,6 @@ export default function PolicyModal({title, children}: {title: string, children:
   
 
   const {isOpen, onOpen, onOpenChange} = useDisclosure();
-  const [scrollBehavior, setScrollBehavior] = React.useState("inside");
 
   return (
     <div className="flex flex-col gap-2">
@@ -15,7 +14,7 @@ export default function PolicyModal({title, children}: {title: string, children:
       <Modal
         isOpen={isOpen}
         onOpenChange={onOpenChange}
-        scrollBehavior={scrollBehavior}
+        scrollBehavior={"inside"}
         classNames={{
             body: "py-6",
             backdrop: "bg-[#292f46]/50 backdrop-opacity-40",
