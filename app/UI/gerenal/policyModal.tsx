@@ -2,8 +2,9 @@
 import React from "react";
 import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure, RadioGroup, Radio} from "@nextui-org/react";
 
-export default function PolicyModal({title,children}) {
-
+export default function PolicyModal({title, children}: {title: string, children: React.ReactNode}) {
+ 
+  
 
   const {isOpen, onOpen, onOpenChange} = useDisclosure();
   const [scrollBehavior, setScrollBehavior] = React.useState("inside");
