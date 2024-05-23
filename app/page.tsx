@@ -1,7 +1,6 @@
 
 
-import { Button } from "@nextui-org/react";
-import { Image } from "@nextui-org/react";
+import { Button, Image, Link } from "@nextui-org/react";
 
 export default function Home() {
   return (
@@ -12,7 +11,9 @@ export default function Home() {
         <div>
           <h1 className="text-[30px] text-black ">My tittle here</h1>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi similique reprehenderit fugit cupiditate nisi fuga, doloribus error est accusamus molestias iure vel illum facilis minima quidem recusandae deleniti asperiores fugiat.</p>
-          <Button className="w-32 bg-black text-white mt-5">Catalog</Button>
+          <Link href="/catalog">
+            <Button className="w-32 bg-black text-white mt-5">Catalog</Button>
+          </Link>
         </div>
       </div>
       <div className="w-0 md:w-1/2   flex justify-center items-center">

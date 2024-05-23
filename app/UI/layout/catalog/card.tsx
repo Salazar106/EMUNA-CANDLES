@@ -57,12 +57,12 @@ export default function CatalogCard(){
       ];
     
       return (
-        <div className="gap-5 w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4" >
+        <div className="gap-5 w-full flex flex-wrap justify-center my-5" >
           {list.map((item, index) => (
-            <Card className="w-[200px] h-[350px]" shadow="lg" key={index} isPressable onPress={() => console.log("item pressed")}>
+            <Card className="sm:w-[280px] sm:h-[400px]" shadow="lg" key={index} isPressable onPress={() => console.log("item pressed")}>
               <CardBody className="overflow-visible p-0">
                 <Image
-                  shadow="lg"
+                  shadow="sm"
                   radius="lg"
                   width="100%"
                   alt={item.title}
@@ -70,8 +70,8 @@ export default function CatalogCard(){
                   src={item.img}
                 />
               </CardBody>
-              <CardFooter className="text-small flex flex-col ">
-                <b className="text-primary">{item.title}</b>
+              <CardFooter className="text-small flex flex-col text-start items-start">
+                <b className="text-blac">{item.title}</b>
                 <span className="text-gray-400">{item.description}</span>
                 <p className="text-default-500">{item.price}</p>
               </CardFooter>
