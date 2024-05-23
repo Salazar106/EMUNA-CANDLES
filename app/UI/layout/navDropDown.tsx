@@ -3,7 +3,7 @@ import React from "react";
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Button} from "@nextui-org/react";
 import clsx from "clsx";
 
-export default function NavDropdown({path, links}) {
+export default function NavDropdown({path, links}:{path: string, links: Array<{name: string, link: string}>}) {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const menuItems = [
